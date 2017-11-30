@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
@@ -53,7 +53,8 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 #            Updates the drawn shapes and draws them on the window, then waits a given time
 #
 #     g. When is a RoseWindow close_on_mouse_click method call necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            The method is necessary when the graphics are donen being drawn for the window, otherwise
+#               the window closes immediately.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
@@ -135,7 +136,6 @@ def example3():
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
     circle.attach_to(window)
-
 
     # ------------------------------------------------------------------
     # Rectangle: needs two opposite corners.
